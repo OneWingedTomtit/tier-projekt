@@ -17,8 +17,29 @@
   </head>
 
   <body>
-    <h1>Dein kleine sußieschen</h1>
-    <h2>Kleine Ciri</h2>
-    <img src="img/ciri.jpeg" alt="ciri" />
+    <header>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></div>
+      <div></div>
+    </header>
+
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-about.partial.html"
+      ></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer></footer>
   </body>
 </html>
